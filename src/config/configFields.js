@@ -12,7 +12,7 @@ const PHONE_VALIDATION = Yup.string().matches(PHONE_REGEX, 'Please enter a valid
 
 // config for this particular registration instance; update this as needed!
 export const PERSON_CONTACT_FIELDS = ['first', 'last', 'nametag', 'pronouns', 'email', 'emailConfirmation', 'phone', 'address', 'apartment', 'city', 'state', 'zip', 'country'];
-export const PERSON_MISC_FIELDS = ['share', 'dietaryPreferences', 'dietaryRestrictions', 'allergies', 'scent', 'carpool', 'bedding', 'volunteer', 'housing', 'roommate', 'photo', 'comments'];
+export const PERSON_MISC_FIELDS = ['volunteer', 'hospitality', 'scholarship', 'share', 'comments'];
 export const PERSON_PAYMENT_FIELDS = ['admission'];
 
 // this can include config for fields not used in this particular registration instance
@@ -38,7 +38,7 @@ export const FIELD_CONFIG = {
     width: 12
   },
   nametag: {
-    label: 'Name for roster',
+    label: 'Nametag',
     validation: NAME_VALIDATION.required('Please enter name for roster.'),
     defaultValue: '',
     width: 12
@@ -116,17 +116,14 @@ export const FIELD_CONFIG = {
     hidden: true
   },
   share: {
-    title: "Roster",
+    title: "Contact information sharing",
     type: 'checkbox',
-    label: "What information do you want shared in the roster?",
+    label: "",
     options: [
-      { label: 'Include my name in the roster', value: 'name' },
-      { label: 'Include my email in the roster', value: 'email' },
-      { label: 'Include my phone number in the roster', value: 'phone' },
-      { label: 'Include my address in the roster', value: 'address' },
+      { label: 'YES! Please share my information with other organizers/events.', value: 'yes' },
     ],
     validation: Yup.array(),
-    defaultValue: ['name', 'email', 'phone', 'address'],
+    defaultValue: [],
   },
   carpool: {
     type: 'checkbox',
@@ -147,12 +144,13 @@ export const FIELD_CONFIG = {
   volunteer: {
     type: 'checkbox',
     title: "Volunteering",
-    label: "Everyone will be asked to help with camp, but we need a few people who can commit in advance or in larger ways.",
+    label: "I would like to volunteer to help! I am available for:",
     options: [
-      { label: "I can come early to help with camp set up", value: 'before' },
-      { label: "I can stay late to help with camp take down", value: 'after' },
-      { label: "I can take on a lead volunteer role during camp (e.g. button maker or snack coordinator)", value: 'lead' },
-      { label: "I can help coordinate in the months before camp (e.g. bedding)", value: 'bedding' },
+      { label: "Airport pick-up/drop-off", value: 'airport' },
+      { label: "Friday pre-ball dance", value: 'friday' },
+      { label: "Saturday pre-workshop decorating", value: 'sat-pre' },
+      { label: "Saturday evening post-ball", value: 'sat-post' },
+      { label: "Sunday Brunch setup and/or cleanup", value: 'sunday' },
     ],
     validation: Yup.array(),
     defaultValue: [],
@@ -251,11 +249,11 @@ export const FIELD_CONFIG = {
   },
   hospitality: {
     type: 'checkbox',
-    title: "Housing",
-    label: "Do you need housing or can you offer housing?",
+    title: "Hospitality (limited availability)",
+    label: "",
     options: [
-      { label: 'I can offer housing', value: 'offering' },
-      { label: 'I need housing (limited availability)', value: 'requesting' },
+      { label: 'I am requesting hospitality', value: 'requesting' },
+      { label: 'I am offering hospitality', value: 'offering' },
     ],
     validation: Yup.array(),
     defaultValue: [],
@@ -263,17 +261,17 @@ export const FIELD_CONFIG = {
   scholarship: {
     type: 'checkbox',
     title: "Scholarships (limited availability)",
-    label: "We feel we've kept the price of camp remarkably low.  However, if you are limited financially, we have a small number of half price scholarships available for camp. If you'd like to be considered for one of these, please let us know.",
+    label: "",
     options: [
-      { label: 'Yes, please consider me for a scholarship', value: 'yes' },
+      { label: 'I am requesting a scholarship', value: 'requesting' },
     ],
     validation: Yup.array(),
     defaultValue: [],
   },
   comments: {
     type: 'textarea',
-    title: "Anything else?",
-    label: "Tell us anything else you'd like us to know. We want to be sure we don't miss anything that could make the weekend welcoming and enjoyable.",
+    title: "Final comments",
+    label: "Please elaborate on any of the above questions or add any additional comments about your registration. Let us know if we missed anything, or there is something else we should know.",
     validation: Yup.string(),
     defaultValue: '',
     rows: 5,

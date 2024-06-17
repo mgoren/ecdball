@@ -4,8 +4,8 @@ import { handleError } from './helpers.js';
 import { appendrecordtospreadsheet } from './google-sheet-sync.js';
 import { savePendingOrder, saveFinalOrder } from './database.js';
 import { sendEmailConfirmations } from './email-confirmation.js';
-import { getStripePaymentIntent as stripeImport } from './stripe.js';
-const getStripePaymentIntent = functions.config().stripe?.secret_key ? stripeImport : undefined;
+// import { getStripePaymentIntent as stripeImport } from './stripe.js';
+// const getStripePaymentIntent = functions.config().stripe?.secret_key ? stripeImport : undefined;
 
 if (admin.apps.length === 0) admin.initializeApp();
 
@@ -14,7 +14,7 @@ export const firebaseFunctionDispatcher = functions.runWith({ enforceAppCheck: t
   try {
     switch(action) {
       case 'caffeinate': return { status: 'awake' };
-      case 'getStripePaymentIntent': return await getStripePaymentIntent(data);
+      // case 'getStripePaymentIntent': return await getStripePaymentIntent(data);
       case 'savePendingOrder': return await savePendingOrder(data);
       case 'saveFinalOrder': return await saveFinalOrder(data);
       case 'sendEmailConfirmations': return await sendEmailConfirmations(data);

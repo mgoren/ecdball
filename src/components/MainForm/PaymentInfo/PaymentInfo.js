@@ -6,7 +6,7 @@ import { StyledPaper, Title, Paragraph } from 'components/Layout/SharedStyles';
 import { InputAdornment, Box, Tab, Tabs } from '@mui/material';
 import { TabPanel, TabContext } from '@mui/lab';
 import { useFormikContext } from 'formik';
-import { PaymentExplanation } from 'components/Static/PaymentExplanation';
+// import { PaymentExplanation } from 'components/Static/PaymentExplanation';
 import config from 'config';
 const { DEPOSIT_OPTION, DEPOSIT_COST, ADMISSION_COST_RANGE, DONATION_OPTION, DONATION_MAX, PAYMENT_DUE_DATE } = config;
 
@@ -75,13 +75,13 @@ export default function PaymentInfo() {
   return (
     <section className='PaymentInfo'>
 
-      <PaymentExplanation />
+      {/* <PaymentExplanation /> */}
 
       <div className='admissions-section'>
         <StyledPaper className='admissions-cost'>
 
-          <Title>Sliding scale</Title>
-          <Paragraph>Please read the sliding scale and deposit explanations above.</Paragraph>
+          {/* <Title>Sliding scale</Title>
+          <Paragraph>Please read the sliding scale and deposit explanations above.</Paragraph> */}
 
           {DEPOSIT_OPTION &&
             <TabContext value={paymentTab}>
