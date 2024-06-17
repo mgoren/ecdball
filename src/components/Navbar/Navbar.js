@@ -8,12 +8,14 @@ const { TITLE, REGISTRATION_ONLY } = config;
 
 const pages = [
   { title: 'Home', path: '/' },
-  { title: 'About', path: '/about' },
-  { title: 'Bands & Callers', path: '/staff' },
-  { title: 'Itinerary', path: '/schedule' },
-  { title: 'Seattle', path: '/seattle' },
-  { title: 'Contact', path: '/contact' },
-  { title: 'Payment info', path: '/paymentinfo' },
+  { title: 'Welcome', path: '/welcome' },
+  { title: 'Band & Caller', path: '/staff' },
+  { title: 'Workshops', path: '/workshops' },
+  { title: 'Schedule', path: '/schedule' },
+  { title: 'Dances', path: '/dances' },
+  { title: 'Fragrance-Free', path: '/fragrance' },
+  { title: 'Contact Us', path: '/contact' },
+  { title: 'Ways to Pay', path: '/waystopay' },
   { title: 'Registration', path: '/registration' }
 ];
 

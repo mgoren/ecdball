@@ -11,10 +11,10 @@ const config = {
   INCLUDE_PRONOUNS_ON_NAMETAG: false,
   INCLUDE_LAST_ON_NAMETAG: true,
   PAYMENT_METHODS: ['paypal', 'check'], // options are stripe|paypal|check (first is default)
-  EVENT_TITLE: '2024 Portland ECD Ball',
+  EVENT_TITLE: 'Portland English Country Dance Ball',
   EVENT_LOCATION: 'Someplace, Somewhere',
   EVENT_LOCATION_2: 'Some address',
-  EVENT_DATE: 'November 1-3, 2024',
+  EVENT_DATE: 'November 1-2-3, 2024',
   TITLE: '2024 Portland ECD Ball Registration',
   CONFIRMATION_PAYPAL_TITLE: '2024 ECD Ball Confirmation',
   CONFIRMATION_CHECK_TITLE: '2024 ECD Ball Registration',

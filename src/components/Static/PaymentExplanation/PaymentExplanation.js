@@ -1,67 +1,41 @@
-import { mailtoLink } from "utils";
-import { StyledLink, StyledPaper, Title } from 'components/Layout/SharedStyles';
-import { Typography } from '@mui/material';
-import { Paragraph } from 'components/Layout/SharedStyles';
+import { websiteLink, mailtoLink } from 'utils';
+import { PageTitle, Paragraph, StyledPaper, StyledLink } from 'components/Layout/SharedStyles';
 import config from 'config';
-const { EMAIL_CONTACT } = config;
+const { DIRECT_PAYMENT_URL, EMAIL_CONTACT } = config;
 
-export function PaymentExplanation() {
+export default function PaymentExplanation() {
   return (
     <StyledPaper>
-      <Title>What Queer Contra Dance Camp Costs</Title>
+      <PageTitle>
+        Ways to Pay
+      </PageTitle>
+
       <Paragraph>
-        Queer Contra Dance Camp is very dear to many of us. As a sleep away, full food service camp, it is on the medium to higher end of dance camp prices. We are transparent about our costs and use sliding-scale registration to make camp accessible for everyone and financially sustainable. After reading the explanations below, choose how much you can afford to pay to attend camp, starting with a minimum of $125.00.
+        <strong>1. Pay as part of online registration</strong><br />
+        The preferred method of paying for the Ball is to pay electronically as part of the online registration process. 
+        You will be able to do this by credit card, debit card, or with PayPal. 
+        If you don't pay online at registration time, just use one of the other methods below.
       </Paragraph>
 
       <Paragraph>
-        The lovely campgrounds that host us is $239 per person for two nights of lodging and five hot meals. We spend about $13,000 booking premier talent so camp can have such fabulous bands, callers, and sound. While our organizers are volunteers, there are other miscellaneous costs such as snacks, insurance, and general supplies. All in all, it costs us about $380 per person to make camp run.
-      </Paragraph>
-
-      <Title sx={{mt: 4}}>Sliding-scale suggestions</Title>
-      <Paragraph>
-        If you can't afford to pay $380, that's fine. We want the weekend to be available to as many people as possible, including you. Some payment suggestions are below. Please consider where you fairly fall on the scale and be as generous as you can. If everyone paid under $380, we would lose $8,000-14,000.
-      </Paragraph>
-
-      <Paragraph>
-        If you are young, possibly a student, with little spending money but plenty of financial assistance from your parents, try to work with your parents to pay the full $380.
+        <strong>2. Pay electronically at a later date via PayPal.Me</strong><br />
+          If you prefer to pay electronically at a later date, you can pay via PayPal.Me <StyledLink to={websiteLink(DIRECT_PAYMENT_URL)}>here</StyledLink>. 
+          This requires you to have a PayPal account, but you can sign up for one on the spot. You can then pay by credit card, debit card, or your bank account. 
+          Please specify the registration amount and "Add a Note" to include your name. 
       </Paragraph>
 
       <Paragraph>
-        If you are unemployed or underemployed and student loans are crushing your spirit, you sound like a great candidate for paying around $125-$200.
+        <strong>3. Write a paper check</strong><br />
+        <em>Make your check out to PCDC</em>, write your name in the memo area, and mail to:<br />
+        Portland ECD Ball<br />
+        David Macemon<br />
+        19936 Derby St<br />
+        West Linn, OR 97068
       </Paragraph>
 
       <Paragraph>
-        If you have a steady job but finances are tough and you don't really have non-liquid assets, maybe pay $200-$300 to help sustain camp without over-stressing.
+        Questions? Concerns? Email David Macemon at <StyledLink to={mailtoLink(EMAIL_CONTACT)}>{EMAIL_CONTACT}</StyledLink>.
       </Paragraph>
-
-      <Paragraph>
-        If you are comfortably employed, please pay at least $380.
-      </Paragraph>
-
-      <Paragraph>
-        If life is good and you treasure the magic of QCDC, that's wonderful to hear! Consider becoming an angel and sponsoring other dancers by paying $500-$600 or more! $635 covers your cost and completely offsets the cost of one low-income ticket. Our angels are what ensure a financially possible future for Queer Contra Dance Camp and a fun weekend for all.
-      </Paragraph>
-
-      <Title sx={{mt: 4}}>Deposit</Title>
-      <Paragraph>
-        If paying the full price at time of registration is stressful, you can pay $50 to hold your spot and send the remainder via PayPal to <StyledLink to={mailtoLink(EMAIL_CONTACT)}>{EMAIL_CONTACT}</StyledLink> as soon as possible, and no later than March 31st.
-      </Paragraph>
-
-      <Title sx={{mt: 4}}>Cancellations</Title>
-      <Paragraph>
-        Cancellations are fully refundable through February 1st. After Febraury 1st, refunds (minus a $50 fee) are available if your vacant spot is filled. If a health concern comes up before the weekend, contact us directly and we'll work with you.
-      </Paragraph>
-
     </StyledPaper>
-  );
-}
-
-export function SlidingScaleSummaryExplanation() {
-  return (
-    <>
-      <Typography>$100 (standard fee)</Typography>
-      <Typography>$120 (nice)</Typography>
-      <Typography>$150 (real nice)</Typography>
-    </>
   )
 }

@@ -1,8 +1,8 @@
 import { Typography, Box, } from '@mui/material';
 import { StyledLink, StyledPaper, PageTitle, SectionDivider, Paragraph } from 'components/Layout/SharedStyles';
-import { mailtoLink} from 'utils';
+// import { mailtoLink} from 'utils';
 import config from 'config';
-const { EMAIL_CONTACT, EVENT_TITLE, EVENT_LOCATION, EVENT_DATE } = config;
+const { EVENT_TITLE, EVENT_LOCATION, EVENT_DATE } = config;
 
 export default function Home() {
 
@@ -15,62 +15,58 @@ export default function Home() {
       </PageTitle>
 
       <Box mt={-5} mb={4}>
-        <img src={process.env.PUBLIC_URL + '/some_event/dancer.jpg'} alt='' style={{ width: "100%", height: "auto" }} />
+        <img src={process.env.PUBLIC_URL + '/ecdball/ecdball-logo.jpg'} alt="ball logo" style={{ width: "100%", height: "auto" }} />
       </Box>
 
       <Typography variant="h6" sx={{ mb: 2 }}>
-        We are a zesty, high-energy dance weekend for experienced dancers.<br />
+        Dances led by <StyledLink internal={true} to="/staff#caller">Gaye Fifer</StyledLink>
+      </Typography>
+      <Typography variant="h6">
+        Music by <StyledLink internal={true} to="/staff#musicians">Betsy Branch, Bill Tomczak, and Lisa Scott</StyledLink>
+      </Typography>
+      <Paragraph sx={{ mt: 0 }}>
+        (<StyledLink internal={true} to="/staff#BetsyBranch">Betsy Branch</StyledLink>, <StyledLink internal={true} to="/staff#LisaScott">Lisa Scott</StyledLink>, <StyledLink internal={true} to="/staff#BillTomczak">Bill Tomczak</StyledLink>)
+      </Paragraph>
+      <Typography variant="h6">
+        <p>Sound engineer <StyledLink internal={true} to="/staff#JohnOorthuys">John Oorthuys</StyledLink></p>
       </Typography>
 
-      <Paragraph>
-        Music by <StyledLink internal={true} to="/staff#band1">Notorious</StyledLink> and <StyledLink internal={true} to="/staff#band2">Playing with Fyre</StyledLink>
+      <Paragraph sx={{ my: 4 }}>
+        This year's Ball will be mask optional.<br />
+        We will no longer be verifying vaccination status.<br />
+        Signed waivers are no longer required.<br />
+        See the <StyledLink internal={true} to="/welcome">Welcome</StyledLink> page for more information.
       </Paragraph>
 
-      <Paragraph>
-        Calling by <StyledLink internal={true} to="/staff#caller1">Seth Tepfer</StyledLink> and <StyledLink internal={true} to="/staff#caller2">Will Mentor</StyledLink><br />
-        Role terms will be Larks and Robins.
+      <Typography variant="h6">
+        Registration: $50/person
+      </Typography>
+      <Paragraph sx={{ mt: 0 }}>
+        Friday night dance is open to all and is not included in this fee.
       </Paragraph>
-
       <Paragraph>
-        Registration: $120-240 sliding scale ($180 break-even)
-      </Paragraph>
-
-      <Paragraph sx={{ mb: 2 }}>
-        some_event will follow mask guidelines of the weekly Seattle contras.<br />
-        As of November 1, well-fitting face masks are required.<br />
-        Please do not attend if you are feeling unwell.<br />
-        See <StyledLink internal={true} to='/about#covid'>here</StyledLink> for the full Covid policy.<br />
-      </Paragraph>
-
-      <Paragraph>
-        You will need to sign a <StyledLink to={process.env.PUBLIC_URL + '/some_event/waiver.pdf'}>waiver</StyledLink> and email it to <StyledLink to={mailtoLink(EMAIL_CONTACT)}>{EMAIL_CONTACT}</StyledLink>.<br />
-      </Paragraph>
-
-      <Paragraph>
-        some_event is a fragrance-free event. Please use only fragrance-free products.
+        Friday and Saturday events at<br />
+        <StyledLink to="https://www.oakspark.com/dance-pavilion">Oaks Park Dance Pavilion</StyledLink><br/>
+        <StyledLink to="https://goo.gl/maps/kEXUGHVriT88hvKG8">7805 SE Oaks Park Way, Portland, OR 97202</StyledLink>
       </Paragraph>
 
       <SectionDivider/>
 
-      <Paragraph>
-        We will be dancing primarily complex contras with limited or no walkthroughs.<br />
-        Many participants easily dance both roles and role switching is common.
-      </Paragraph>
-
-      <Paragraph>
-        some_event Contra Dance Weekend gives experienced dancers the opportunity to explore ways in which to challenge themselves and improve their skills as dance partners while experiencing complex dances and immense joy.
-      </Paragraph>
-
-      <Paragraph>
-        We begin the weekend with no walkthrough contra corners. Are you comfortable navigating complex dances often with no walkthroughs or hash calls? Do you recover quickly from mistakes? If you answered yes, this weekend is for you.
+      <Typography variant="h6">
+        Pre-Ball <StyledLink internal={true} to="/workshops">workshops</StyledLink>:
+      </Typography>
+      <Paragraph sx={{ mt: 1 }}>
+        <strong>3-5pm on Sept 24, Oct 15, and Oct 29</strong><br />
+        <StyledLink to="https://www.renpdx.org/">A Renaissance School</StyledLink><br />
+        <StyledLink to="https://goo.gl/maps/M2CBrKV3KKJkuTb8A">234 S Bancroft St, Portland, OR 97239</StyledLink>
       </Paragraph>
 
       <SectionDivider/>
 
       <Typography variant="h4" fontStyle="italic" gutterBottom>
-      <StyledLink internal={true} to="/registration">Registration open</StyledLink>
-      {/* Registration opening in early November */}
+        Registration opening soon
       </Typography>
+
     </StyledPaper>
   );
 }
