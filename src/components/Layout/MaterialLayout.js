@@ -11,7 +11,7 @@ export default function MaterialLayout({ children }) {
   useEffect(() => {
     setTheme(prefersDarkMode ? darkTheme : lightTheme);
   }, [prefersDarkMode]);
-  
+
   const toggleColorMode = () => {
     setTheme(prevTheme => (prevTheme === lightTheme ? darkTheme : lightTheme));
   };
