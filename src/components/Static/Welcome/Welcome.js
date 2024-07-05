@@ -9,46 +9,26 @@ export default function Welcome() {
       </PageTitle>
 
       <Header>
+        New Location - this year only
+      </Header>
+
+      <Paragraph>
+        Our regular location for the ball (Oaks Park Dance Pavilion) will be renovated starting in the fall of 2024 through May 2025. 
+        We're looking forward to being back at Oaks Park for our 2025 Ball!
+      </Paragraph>
+
+      <Paragraph>
+        This year's Ball will be held at the Milwaukie-Waluga Masonic Lodge, 10636 SE Main St, Milwaukie, OR 97222. 
+        It has a wonderful wooden dance floor. It's a bit smaller than Oaks Park so a few minor things will change (for example we will not have tables setup for the break/snacks). 
+        There are city parking lots across the street that will be free when we are in the building.
+      </Paragraph>
+
+      <Header>
         COVID Safety Policy
       </Header>
 
       <Paragraph>
-        Following are the COVID safety requirements for the 2023 Portland English Country Ball. 
-        Should the public health situation require us to change these safety policies, attendees 
-        will be notified by email and will be offered the option to cancel their registration and 
-        receive a full refund.
-      </Paragraph>
-
-      <Paragraph>
-        <strong>MASKING:</strong> Masking will be optional for this year's ball. Please respect everyone's choices 
-        regarding masking. You are very welcome to wear a mask or to not wear a mask, depending on 
-        your needs and comfort level.
-      </Paragraph>
-
-      <Paragraph>
-        Should the public health situation require us to change these safety policies, we may change 
-        this policy to require the wearing of a well-fitted mask.
-      </Paragraph>
-
-      <Paragraph>
-        <strong>VACCINATIONS:</strong> As of September 5th, 2023 PCDC is no longer verifying vaccination status 
-        (barring any unforeseen circumstances) at any events.
-      </Paragraph>
-
-      <Paragraph>
-        <strong>TESTING:</strong> For the good of the community we would like it if you tested before you arrived at 
-        the ball, though we will not ask for proof of a negative test.
-      </Paragraph>
-
-      <Paragraph>
-        <strong>WAIVER:</strong> As of September 5th, 2023, PCDC is no longer requiring signed waivers to attend PCDC events.
-      </Paragraph>
-
-      <Paragraph>
-        <strong>If you are sick or test positive for COVID,</strong> please do not attend the ball. We will issue a full 
-        refund for dancers who need to cancel because of COVID symptoms, a positive test, or exposure 
-        to COVID within the last 5 days. To be eligible for a refund, you need to <StyledLink internal={true} to="/contact">contact us</StyledLink> prior to 
-        the ball.
+        The Ball will be Mask optional this year.  We will not require vaccinations or testing.
       </Paragraph>
 
       <Header>
@@ -58,7 +38,7 @@ export default function Welcome() {
       <Paragraph>
         At the Ball, most dances will be walked through to remind dancers of the figures, and all dances will be prompted. 
         We encourage you to familiarize yourself with the <StyledLink internal={true} to="/dances">dances on the program</StyledLink> and 
-        check out the information in our <StyledLink to="/ecdball/2023PortlandBall_DanceInstructions.pdf">Dance Instructions packet</StyledLink>.
+        check out the information in our <StyledLink to="/ecdball/2024PortlandBall_DanceInstructions.pdf">Dance Instructions packet</StyledLink>.
       </Paragraph>
 
       <Header>
@@ -98,14 +78,6 @@ export default function Welcome() {
       <Paragraph>
         In the Portland area, there will be three <StyledLink internal={true} to="/workshops">workshop sessions</StyledLink> in 
         September and October to prepare for the Ball.
-      </Paragraph>
-
-      <Header>
-        Parking at Oaks Park
-      </Header>
-
-      <Paragraph>
-        There is a $3/day parking fee at Oaks Park.
       </Paragraph>
     </StyledPaper>
   );

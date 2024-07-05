@@ -2,7 +2,7 @@ import { Typography, Box, } from '@mui/material';
 import { StyledLink, StyledPaper, PageTitle, SectionDivider, Paragraph } from 'components/Layout/SharedStyles';
 // import { mailtoLink} from 'utils';
 import config from 'config';
-const { EVENT_TITLE, EVENT_LOCATION, EVENT_DATE } = config;
+const { EVENT_TITLE, EVENT_LOCATION, EVENT_LOCATION_2, EVENT_DATE } = config;
 
 export default function Home() {
 
@@ -11,6 +11,7 @@ export default function Home() {
       <PageTitle>
         {EVENT_TITLE}<br />
         {EVENT_LOCATION}<br />
+        {EVENT_LOCATION_2}<br />
         {EVENT_DATE}
       </PageTitle>
 
@@ -33,8 +34,6 @@ export default function Home() {
 
       <Paragraph sx={{ my: 4 }}>
         This year's Ball will be mask optional.<br />
-        We will no longer be verifying vaccination status.<br />
-        Signed waivers are no longer required.<br />
         See the <StyledLink internal={true} to="/welcome">Welcome</StyledLink> page for more information.
       </Paragraph>
 
@@ -46,8 +45,8 @@ export default function Home() {
       </Paragraph>
       <Paragraph>
         Friday and Saturday events at<br />
-        <StyledLink to="https://www.oakspark.com/dance-pavilion">Oaks Park Dance Pavilion</StyledLink><br/>
-        <StyledLink to="https://goo.gl/maps/kEXUGHVriT88hvKG8">7805 SE Oaks Park Way, Portland, OR 97202</StyledLink>
+        {EVENT_LOCATION}<br />
+        {EVENT_LOCATION_2}<br />
       </Paragraph>
 
       <SectionDivider/>
@@ -56,7 +55,7 @@ export default function Home() {
         Pre-Ball <StyledLink internal={true} to="/workshops">workshops</StyledLink>:
       </Typography>
       <Paragraph sx={{ mt: 1 }}>
-        <strong>3-5pm on Sept 24, Oct 15, and Oct 29</strong><br />
+        <strong>3-5pm on TBD</strong><br />
         <StyledLink to="https://www.renpdx.org/">A Renaissance School</StyledLink><br />
         <StyledLink to="https://goo.gl/maps/M2CBrKV3KKJkuTb8A">234 S Bancroft St, Portland, OR 97239</StyledLink>
       </Paragraph>

@@ -12,8 +12,8 @@ const config = {
   INCLUDE_LAST_ON_NAMETAG: true,
   PAYMENT_METHODS: ['paypal', 'check'], // options are stripe|paypal|check (first is default)
   EVENT_TITLE: 'Portland English Country Dance Ball',
-  EVENT_LOCATION: 'Someplace, Somewhere',
-  EVENT_LOCATION_2: 'Some address',
+  EVENT_LOCATION: <a href='https://www.milwaukielodge.org' target='_blank' rel='noreferrer'>Milwaukie-Waluga Masonic Lodge</a>,
+  EVENT_LOCATION_2: 'Milwaukie, Oregon',
   EVENT_DATE: 'November 1-2-3, 2024',
   TITLE: '2024 Portland ECD Ball Registration',
   CONFIRMATION_PAYPAL_TITLE: '2024 ECD Ball Confirmation',

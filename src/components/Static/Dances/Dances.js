@@ -16,7 +16,7 @@ export default function Dances() {
 
       <Paragraph>
         Find dance instructions, selected sheet music, and videos in 
-        the <StyledLink to="/ecdball/2023PortlandBall_DanceInstructions.pdf">Dance Instructions packet</StyledLink>.
+        the <StyledLink to="/ecdball/2024PortlandBall_DanceInstructions.pdf">Dance Instructions packet</StyledLink>.
       </Paragraph>
 
       <Grid container>

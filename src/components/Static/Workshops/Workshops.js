@@ -18,9 +18,7 @@ export default function Workshops() {
       </Paragraph>
 
       <Paragraph>
-        <strong>September 24:</strong> Erik Weberg calling; music by Bill Tomczak and Lisa Scott<br />
-        <strong>October 15:</strong> Erik Weberg calling; music by Betsy Branch, Bill Tomczak and Lisa Scott<br />
-        <strong>October 29:</strong> Erik Weberg calling; music by Betsy Branch, Bill Tomczak and Lisa Scott
+        TBD
       </Paragraph>
 
       <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, justifyContent: "space-between", mb: 2 }}>
@@ -37,7 +35,7 @@ export default function Workshops() {
           </Paragraph>
 
           <Paragraph>
-            Suggested donation is $10 - $15
+            Suggested donation is $10 - $20
           </Paragraph>
         </Box>
 
@@ -80,31 +78,32 @@ export default function Workshops() {
       <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, justifyContent: "space-between", mb: 2 }}>
         <Box>
           <Paragraph>
-            <strong>Date:</strong> November 4
+            <strong>Date:</strong> November 2
           </Paragraph>
 
           <Paragraph>
-            <strong>Time:</strong> 12:00 – 2:30
+            <strong>Time:</strong> 12:00 - 2:30
           </Paragraph>
 
           <Paragraph>
             <strong>Location:</strong><br />
-            <StyledLink to="https://www.oakspark.com/dance-pavilion">Oaks Park Dance Pavilion</StyledLink><br />
-            7805 Oaks Park Way<br />
-            Portland, OR 97202<br />
+            <StyledLink to="https://www.milwaukielodge.org">Milwaukie-Waluga Masonic Lodge</StyledLink><br />
+            10636 SE Main St<br />
+            Milwaukie, OR 97222<br />
           </Paragraph>
 
           <Paragraph>
-            There is a $3 daily parking charge at Oaks Park.
+            There are city parking lots across the street that offer 4-hour parking until 5:00, and then free after that.
           </Paragraph>
         </Box>
 
         <Box sx={{ mt: 1 }}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d358132.1996215507!2d-122.662034!3d45.471661!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950ae61a3f21f5%3A0x8e96e1b9b9ac2b5c!2s7805%20SE%20Oaks%20Park%20Way%2C%20Portland%2C%20OR%2097202!5e0!3m2!1sen!2sus!4v1686634645346!5m2!1sen!2sus" 
-            title="Google map embed for Oaks Park Dance Pavilion"  
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.1919339668716!2d-122.64390522291824!3d45.44578827107362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549575283e1feff1%3A0x4fe45bd3041fa327!2sMilwaukie%20Masonic%20Lodge!5e0!3m2!1sen!2sus!4v1720208161655!5m2!1sen!2sus"
+            title="Google map embed for Milwaukie-Waluga Masonic Lodge"  
             style={{border: 0}} allowFullScreen="" loading="lazy" 
             width={230} height={230}
-            referrerPolicy="no-referrer-when-downgrade" />
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </Box>
       </Box>
 

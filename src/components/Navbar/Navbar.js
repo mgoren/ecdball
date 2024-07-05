@@ -65,7 +65,7 @@ export default function Navbar({ toggleColorMode }) {
           ))}
         </Menu>
         {/* <ListItem sx={{ my: 2, color: 'inherit', display: 'block' }}>
-          <Typography textAlign="center">ECD Ball 2023</Typography>
+          <Typography textAlign="center">ECD Ball 2024</Typography>
         </ListItem> */}
       </Box>
 

@@ -14,49 +14,28 @@ export default function Staff() {
     <StyledPaper extraStyles={{ maxWidth: 750 }}>
       <PageTitle>Performers</PageTitle>
 
-      <Header id="ErikWeberg1">Calling by <em>Erik Weberg</em></Header>
+      <Header id="caller">Calling by <em>Gaye Fifer</em></Header>
       <Box>
         <Box sx={{ mt: 2, pr: 3, float: { xs: 'none', sm: 'left' } }}>
-          <img src={process.env.PUBLIC_URL + '/ecdball/ErikWeberg1.jpg'} alt="Erik Weberg" style={{ width: 225 }} />
+          <img src={process.env.PUBLIC_URL + '/ecdball/GayeFifer.png'} alt="Gaye Fifer" style={{ width: 225 }} />
         </Box>
         <Paragraph sx={{ pt: 1, mb: 0 }}>
-          I'm happily anticipating calling the Portland English ball for you this Fall. 
-          Here is a brief summary of my calling trajectory and some thoughts on my own approach to programming and calling dances. 
-          I called contra dances first during the 90s, then in around 2000 I started calling English dances here in Portland. 
-          In addition to calling at our local ECD, I have also enjoyed calling ball events here and in other communities, 
-          and at various weeks, weekends, and festivals around North America. 
-          I love the variety of textures and moods inherent in English dance repertoire, 
-          and that's where my primary interest in calling dances currently lies. 
-          As a musician I am particularly attuned to the music which accompanies the dances, 
-          and often my programming is guided as much by music as by choreography. 
-          My goal, of course, is to provide a program of interesting and beautiful music to support equally interesting and beautiful dances 
-          comprising new compositions as well as tried-and-true relics. 
-          I am very much looking forward to seeing you on the dance floor at this year's ball, 
-          enjoying the music of Fine Companions and the dances I've chosen to present that evening. 
-          Travel safely; I'll see you soon.
+          Gaye Fifer is an accomplished caller from Pittsburgh, PA. 
+          An active dancer herself, Gaye understands the subtleties of making dances particularly satisfying for dancers. 
+          Her instructions are clear and concise, as she is a teacher by profession. 
+          An easy smile and delightful sense of humor are part of Gaye's relaxed, pleasant style at the microphone. 
+          Gaye calls contra and English dances throughout the U.S. and Canada. 
+          She is also an enthusiastic advocate and instructor of contra-style waltz. 
+          Gaye is the former President of the Board of CDSS.
         </Paragraph>
       </Box>
       <Box sx={{ clear: 'both' }} />
 
       <SectionDivider />
 
-      <Header id="FineCompanions">Music by <em>Fine Companions</em></Header>
-      <Box>
-        <Box sx={{ mt: 2, pl: { xs: 'none', sm: 3 }, float: { xs: 'none', sm: 'right' } }}>
-          <img src={process.env.PUBLIC_URL + '/ecdball/FineCompanions.png'} alt="Fine Companions"  style={{ width: 225 }} />
-        </Box>
-        <Paragraph sx={{ pt: 1, mb: 0 }}>
-        Start with four great talents, mix in some magic and get a musical 
-        feast better than the sum of its ingredients.   This Portland favorite 
-        just keeps growing their reputation and it's all good!  The band features 
-        Betsy Branch on fiddle, Lisa Scott on piano, Bill Tomczak on clarinet & 
-        saxophone, and Erik Weberg on flute. If you like lots of dreamy textures 
-        and rich harmonies, this is the band for you!
-        </Paragraph>
+      <Box sx={{ mb: 4 }}>
+        <Header id="music">Music by <em>Betsy Branch</em>, <em>Lisa Scott</em> and <em>Bill Tomczak</em></Header>
       </Box>
-      <Box sx={{ clear: 'both' }} />
-
-      <SectionDivider />
 
       <Box id="BetsyBranch">
         <Box sx={{ pr: 3, float: { xs: 'none', sm: 'left' } }}>
@@ -119,23 +98,6 @@ export default function Staff() {
           Time and Fine Companions. He has recorded with The Latter Day Lizards, BLT, Wild Asparagus 
           and Yankee Ingenuity and appears on the recordings Cascade of Tears and Gypsy Wine with 
           Mary Lea and friends.
-        </Paragraph>
-      </Box>
-      <Box sx={{ clear: 'both' }} />
-
-      <SectionDivider />
-
-      <Box id="ErikWeberg2">
-        <Box sx={{ pr: 3, float: { xs: 'none', sm: 'left' } }}>
-          <img src={process.env.PUBLIC_URL + '/ecdball/ErikWeberg2.png'} alt="Erik Weberg" style={{ width: 170 }} />
-        </Box>
-        <Paragraph sx={{ mb: 0 }}>
-          <StyledLink to="https://www.erikweberg.com/"><strong>Erik Weberg</strong></StyledLink> plays 
-          flutes, harmonicas, and bombardes (yes, plural). He is a regular musician at English country 
-          dances in Portland, and he organizes and plays for a monthly contra dance with the band 
-          Joyride. He has also been an English and contra dance caller, performing at festivals and weekends 
-          around the country, and programmed Northwest Passage for many years. Erik is also co-producer 
-          of the Portland Megaband contra dance event.
         </Paragraph>
       </Box>
       <Box sx={{ clear: 'both' }} />

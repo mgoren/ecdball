@@ -22,7 +22,7 @@ export default function MaterialLayout({ children }) {
       <div sx={rootStyle(theme)}>
         <Navbar toggleColorMode={toggleColorMode} />
         <Box sx={{ textAlign: 'center', my: 2, color: 'red', fontWeight: 'bold' }}>
-          TESTING ONLY - INFO IS OUTDATED
+          TESTING ONLY - REGISTRATION IS NOT YET OPEN
         </Box>
         {/* <Paper sx={paperStyle(theme)}>{children}</Paper> */}
         <Box sx={{ my: { xs: 0, sm: 2 } }}>
