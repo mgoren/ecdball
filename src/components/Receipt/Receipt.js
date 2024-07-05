@@ -33,7 +33,7 @@ export default function Receipt({ order, person, isPurchaser }) {
         {CHECK_ADDRESS}
       </Typography>
       <Typography component='p' sx={{ mt: 2 }}>
-        We will be in touch soon to confirm your acceptance into camp, once we receive your payment!
+        We will be in touch soon to confirm your acceptance into the Ball, once we receive your payment!
       </Typography>
     </>
   );
@@ -58,8 +58,8 @@ export default function Receipt({ order, person, isPurchaser }) {
       </Typography>
       <Typography component='p' sx={{ mt: 2 }}>
         {isElectronicPayment && isFullPayment && "We've received payment for your registration."}
-        {isElectronicPayment && isDeposit && `We are holding your spot in camp. The balance of your registration fee is due by ${PAYMENT_DUE_DATE}.`}
-        {isCheckPayment && <strong>Your spot in camp will be confirmed once we receive payment for your registration.</strong>}
+        {isElectronicPayment && isDeposit && `We are holding your spot. The balance of your registration fee is due by ${PAYMENT_DUE_DATE}.`}
+        {isCheckPayment && <strong>Your spot will be confirmed once we receive payment for your registration.</strong>}
       </Typography>
     </>
   );

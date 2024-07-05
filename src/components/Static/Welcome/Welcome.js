@@ -28,7 +28,7 @@ export default function Welcome() {
       </Header>
 
       <Paragraph>
-        The Ball will be Mask optional this year.  We will not require vaccinations or testing.
+        The Ball will be mask optional this year.  We will not require vaccinations or testing.
       </Paragraph>
 
       <Header>

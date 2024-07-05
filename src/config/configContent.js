@@ -1,24 +1,24 @@
 const config = {
   DANCES: [
-    "Jack by the Hedge",
-    "Pall Mall",
-    "A New Leaf",
-    "Beautious Grove",
-    "We'll Bed & We'll Weed",
-    "Mr. Hamilton's Inauguration",
-    "The Merry Andrew",
     "Apollo's Hunt",
-    "Gaye's Gifts",
-    "Well Donne",
-    "Treasure of the Big Woods",
-    "Pluck Me a Fig",
-    "Woodstock Park",
-    "Mr. Smukler's Inauguration",
+    "Beautious Grove",
     "Charlene's Celebration",
+    "Gaye's Gifts",
     "Gentlemen's Delight",
+    "Jack by the Hedge",
+    "The Merry Andrew",
+    "Mr. Hamilton's Inauguration",
+    "Mr. Smukler's Inauguration",
+    "A New Leaf",
+    "Pall Mall",
+    "Pluck Me a Fig",
+    "Softly Good Tummas",
     "Sweet Cream",
     "Ties of Love",
-    "Softly Good Tummas"
+    "Treasure of the Big Woods",
+    "We'll Bed & We'll Weed",
+    "Well Donne",
+    "Woodstock Park"
   ]
 };
 

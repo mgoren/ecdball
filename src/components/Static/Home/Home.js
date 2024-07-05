@@ -41,6 +41,7 @@ export default function Home() {
         Registration: $50/person
       </Typography>
       <Paragraph sx={{ mt: 0 }}>
+        Due to a venue change for this year only, registration will be reduced from previous years.<br />
         Friday night dance is open to all and is not included in this fee.
       </Paragraph>
       <Paragraph>
@@ -55,7 +56,7 @@ export default function Home() {
         Pre-Ball <StyledLink internal={true} to="/workshops">workshops</StyledLink>:
       </Typography>
       <Paragraph sx={{ mt: 1 }}>
-        <strong>3-5pm on TBD</strong><br />
+        <strong>3-5pm on September 22, October 6 and 27</strong><br />
         <StyledLink to="https://www.renpdx.org/">A Renaissance School</StyledLink><br />
         <StyledLink to="https://goo.gl/maps/M2CBrKV3KKJkuTb8A">234 S Bancroft St, Portland, OR 97239</StyledLink>
       </Paragraph>
