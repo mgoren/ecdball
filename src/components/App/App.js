@@ -33,7 +33,7 @@ export default function App() {
               <Route exact path="/fragrance" element=<Fragrance /> />
               <Route exact path="/contact" element=<Contact /> />
               <Route exact path="/waystopay" element=<PaymentExplanation /> />
-              <Route path="/registration" element=<Registration /> />
+              <Route path="/registration2024" element=<Registration /> />
               <Route exact path="/error-contact-support" element=<Error error={`Unexpected payment processing error. Please email ${EMAIL_CONTACT}`} /> />
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
