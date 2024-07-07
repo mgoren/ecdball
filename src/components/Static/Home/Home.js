@@ -1,8 +1,7 @@
 import { Typography, Box, } from '@mui/material';
 import { StyledLink, StyledPaper, PageTitle, SectionDivider, Paragraph } from 'components/Layout/SharedStyles';
-// import { mailtoLink} from 'utils';
 import config from 'config';
-const { EVENT_TITLE, EVENT_LOCATION, EVENT_LOCATION_2, EVENT_DATE } = config;
+const { EVENT_TITLE, EVENT_LOCATION_2, EVENT_DATE } = config;
 
 export default function Home() {
 
@@ -10,7 +9,7 @@ export default function Home() {
     <StyledPaper extraStyles={{ maxWidth: 750 }} align="center">
       <PageTitle>
         {EVENT_TITLE}<br />
-        {EVENT_LOCATION}<br />
+        <StyledLink to='https://www.milwaukielodge.org'>Milwaukie-Waluga Masonic Lodge</StyledLink><br />
         {EVENT_LOCATION_2}<br />
         {EVENT_DATE}
       </PageTitle>
@@ -23,11 +22,8 @@ export default function Home() {
         Dances led by <StyledLink internal={true} to="/staff#caller">Gaye Fifer</StyledLink>
       </Typography>
       <Typography variant="h6">
-        Music by <StyledLink internal={true} to="/staff#musicians">Betsy Branch, Bill Tomczak, and Lisa Scott</StyledLink>
+        Music by <StyledLink internal={true} to="/staff#BetsyBranch">Betsy Branch</StyledLink>, <StyledLink internal={true} to="/staff#BillTomczak">Bill Tomczak</StyledLink>, and <StyledLink internal={true} to="/staff#LisaScott">Lisa Scott</StyledLink>
       </Typography>
-      <Paragraph sx={{ mt: 0 }}>
-        (<StyledLink internal={true} to="/staff#BetsyBranch">Betsy Branch</StyledLink>, <StyledLink internal={true} to="/staff#LisaScott">Lisa Scott</StyledLink>, <StyledLink internal={true} to="/staff#BillTomczak">Bill Tomczak</StyledLink>)
-      </Paragraph>
       <Typography variant="h6">
         <p>Sound engineer <StyledLink internal={true} to="/staff#JohnOorthuys">John Oorthuys</StyledLink></p>
       </Typography>
@@ -41,12 +37,15 @@ export default function Home() {
         Registration: $50/person
       </Typography>
       <Paragraph sx={{ mt: 0 }}>
-        Due to a venue change for this year only, registration will be reduced from previous years.<br />
+        Due to having to change to a smaller venue (for this year only),<br />
+        we are limiting the total attendees for the Ball. Please register early.
+      </Paragraph>
+      <Paragraph>
         Friday night dance is open to all and is not included in this fee.
       </Paragraph>
       <Paragraph>
         Friday and Saturday events at<br />
-        {EVENT_LOCATION}<br />
+        <StyledLink to='https://www.milwaukielodge.org'>Milwaukie-Waluga Masonic Lodge</StyledLink><br />
         {EVENT_LOCATION_2}<br />
       </Paragraph>
 
