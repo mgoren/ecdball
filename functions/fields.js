@@ -28,7 +28,6 @@ export const fieldOrder = [
   'admission',
   'donation',
   'total',
-  'deposit',
   'paid',
   'status',
   'purchaser',
