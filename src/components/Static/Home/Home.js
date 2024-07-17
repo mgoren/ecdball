@@ -63,7 +63,7 @@ export default function Home() {
       <SectionDivider/>
 
       <Typography variant="h4" fontStyle="italic" gutterBottom>
-        Registration opening soon
+        <StyledLink internal={true} to="/registration">Registration now open!</StyledLink>
       </Typography>
 
     </StyledPaper>

@@ -1,5 +1,5 @@
 const config = {
-  SANDBOX_MODE: true, // for testing only
+  SANDBOX_MODE: false, // for testing only
   SHOW_PRE_REGISTRATION: false,
   ADMISSION_QUANTITY_MAX: 2,
   ADMISSION_COST_RANGE: [50, 50],
