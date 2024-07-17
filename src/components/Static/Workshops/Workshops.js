@@ -15,9 +15,9 @@ export default function Workshops() {
 
       <Paragraph> 
         In the Portland area, there will be three Sunday pre-ball workshop sessions:<br />
-        <strong>September 22:</strong> TBD with Betsy Branch, Bill Tomczak and Lisa Scott<br />
-        <strong>October 6:</strong> TBD with Betsy Branch, Erik Weberg and Lisa Scott<br />
-        <strong>October 27:</strong> TBD with Betsy Branch, Bill Tomczak and Lisa Scott
+        <strong>September 22:</strong> David Macemon with Betsy Branch, Bill Tomczak and Lisa Scott<br />
+        <strong>October 6:</strong> Cynthia Stenger with Betsy Branch, Erik Weberg and Lisa Scott<br />
+        <strong>October 27:</strong> Ric Goldman with Betsy Branch, Bill Tomczak and Lisa Scott
       </Paragraph>
 
       <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, justifyContent: "space-between", mb: 2 }}>
