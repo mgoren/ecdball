@@ -261,7 +261,7 @@ export const FIELD_CONFIG = {
   scholarship: {
     type: 'checkbox',
     title: "Scholarships (limited availability)",
-    label: "",
+    label: "On the checkout page, please select the option to pay by check. The registrar will contact you for details.",
     options: [
       { label: 'I am requesting a scholarship', value: 'requesting' },
     ],
