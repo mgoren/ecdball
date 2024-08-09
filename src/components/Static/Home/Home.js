@@ -19,7 +19,8 @@ export default function Home() {
       </Box>
 
       <Typography variant="h6" sx={{ mb: 2 }}>
-        Dances led by <StyledLink internal={true} to="/staff#caller">Gaye Fifer</StyledLink>
+        Dances led by <StyledLink internal={true} to="/staff#caller">Gaye Fifer</StyledLink><br />
+        Gaye will be using positional calling
       </Typography>
       <Typography variant="h6">
         Music by <StyledLink internal={true} to="/staff#BetsyBranch">Betsy Branch</StyledLink>, <StyledLink internal={true} to="/staff#BillTomczak">Bill Tomczak</StyledLink>, and <StyledLink internal={true} to="/staff#LisaScott">Lisa Scott</StyledLink>
