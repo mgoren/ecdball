@@ -21,19 +21,18 @@ export default function Receipt({ order, person, isPurchaser }) {
   const purchaserCheckPaymentContent = (
     <>
       <Typography component='p' color='error' sx={{ mt: 2 }}>
-        <strong>You are not yet registered!</strong>
+        <strong>You are not on the waitlist yet!</strong>
       </Typography>
       <Typography component='p'>
-        Paying on time can increase your chance of being accepted.<br />
-        Please send a check for {isDeposit ? `at least $${order.deposit} to hold` : `$${total} to secure`} your spot.<br />
+        The waitlist order is determined by when we receive payment.<br />
+        Paying soon will add you to the waitlist and increase your chance of being able to attend the Ball.<br />
+        If at any point you decide to remove yourself from the waitlist, let David (macemondavid@gmail.com) know and he will process a 100% refund.<br />
+        Please send a check for {isDeposit ? `at least $${order.deposit} to hold` : `$${total} to secure`} your spot on the waitlist.<br />
         (Or you can still pay electronically <StyledLink to={websiteLink(DIRECT_PAYMENT_URL)}>here</StyledLink>.)
       </Typography>
       <Typography component='p' sx={{ mt: 2 }}>
         Make your check out to {CHECK_TO}:<br />
         {CHECK_ADDRESS}
-      </Typography>
-      <Typography component='p' sx={{ mt: 2 }}>
-        We will be in touch soon to confirm your acceptance into the Ball, once we receive your payment!
       </Typography>
     </>
   );
@@ -41,7 +40,10 @@ export default function Receipt({ order, person, isPurchaser }) {
   const purchaserElectronicPaymentContent = (
     <Typography component='p' sx={{ mt: 2 }}>
       Thank you for registering for the {EVENT_TITLE}!<br />
+      You are currently on the wait-list for the 2024 Portland English Ball. We will let you know as soon as possible if someone cancels and there is space for you.<br />
+
       Your payment for ${paid} has been successfully processed.<br />
+      If you decide to remove yourself from the waitlist, let David (macemondavid@gmail.com) know and he will process a 100% refund.<br />
       {isDeposit &&
         <strong>
           Your balance is due by {PAYMENT_DUE_DATE}.<br />
