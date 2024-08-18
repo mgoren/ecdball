@@ -7,14 +7,6 @@ export default function Home() {
 
   return (
     <StyledPaper extraStyles={{ maxWidth: 750 }} align="center">
-
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mb: 4, p: 2, backgroundColor: 'var(--color-error)' }}>
-        <Typography variant="h6">
-          The Ball is full but the waitlist is currently empty.<br />
-          We typically get a few cancellations before the Ball, so sign up now!
-        </Typography>
-      </Box>
-
       <PageTitle>
         {EVENT_TITLE}<br />
         <StyledLink to='https://www.milwaukielodge.org'>Milwaukie-Waluga Masonic Lodge</StyledLink><br />

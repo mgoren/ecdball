@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { CssBaseline, useMediaQuery, Box } from '@mui/material';
+import { CssBaseline, useMediaQuery, Box, Typography } from '@mui/material';
 import { ThemeProvider } from '@mui/system';
 import Navbar from '../Navbar';
 import { lightTheme, darkTheme, rootStyle } from './LayoutStyles';
@@ -22,6 +22,14 @@ export default function MaterialLayout({ children }) {
       <div sx={rootStyle(theme)}>
         <Navbar toggleColorMode={toggleColorMode} />
         {/* <Paper sx={paperStyle(theme)}>{children}</Paper> */}
+
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', p: 1, backgroundColor: 'var(--color-error)' }}>
+          <Typography>
+            The Ball is full but the waitlist is currently empty. 
+            We typically get a few cancellations before the Ball, so sign up now!
+          </Typography>
+        </Box>
+
         <Box sx={{ my: { xs: 0, sm: 2 } }}>
           {children}
         </Box>
