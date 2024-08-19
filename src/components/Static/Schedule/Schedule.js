@@ -33,7 +33,7 @@ export default function Schedule() {
           </Paragraph>
           <Paragraph>
             Sliding Scale $10 - $15 admission fee (not included in the Ball registration)<br />
-            TBD calling with music by: TBD
+            Cynthia Stenger calling with music by Laura Kuhlman, Brooke Bubna, Jenny Peterson
           </Paragraph>
         </Box>
         <Box sx={{ mt: { xs: 0, sm: 2.5 }, pl: { xs: 0, sm: 4 } }}>

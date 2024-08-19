@@ -17,7 +17,7 @@ export default function Workshops() {
         In the Portland area, there will be three Sunday pre-ball workshop sessions:<br />
         <strong>September 22:</strong> David Macemon with Betsy Branch, Bill Tomczak and Lisa Scott<br />
         <strong>October 6:</strong> Cynthia Stenger with Betsy Branch, Erik Weberg and Lisa Scott<br />
-        <strong>October 27:</strong> Ric Goldman with Betsy Branch, Bill Tomczak and Lisa Scott
+        <strong>October 27:</strong> Ric Goldman with Erik Weberg, Bill Tomczak and Lisa Scott
       </Paragraph>
 
       <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, justifyContent: "space-between", mb: 2 }}>
