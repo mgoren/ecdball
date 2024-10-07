@@ -25,8 +25,7 @@ export default function MaterialLayout({ children }) {
 
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', p: 1, backgroundColor: 'var(--color-error)' }}>
           <Typography>
-            The Ball is full but the waitlist is currently empty. 
-            We typically get a few cancellations before the Ball, so sign up now!
+            The Ball is full with a long waitlist. We are no longer taking registrations.
           </Typography>
         </Box>
 

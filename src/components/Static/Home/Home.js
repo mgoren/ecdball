@@ -64,7 +64,9 @@ export default function Home() {
       <SectionDivider/>
 
       <Typography variant="h4" fontStyle="italic" gutterBottom>
-        <StyledLink internal={true} to="/registration">Registration now open!</StyledLink>
+        {/* <StyledLink internal={true} to="/registration">Registration now open!</StyledLink> */}
+        The Ball is full with a long waitlist.<br />
+        We are no longer taking registrations.
       </Typography>
 
     </StyledPaper>
